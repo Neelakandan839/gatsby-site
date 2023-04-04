@@ -192,7 +192,7 @@ const Enquiry = () => {
         <TextField
           type="text"
           id="outlined-basic1"
-          label=""
+          hiddenLabel
           style={{ background: "#ffffff", width: "100%", borderRadius: "5px" }}
           InputProps={{
             sx: {
@@ -217,7 +217,7 @@ const Enquiry = () => {
         <TextField
           type="number"
           id="outlined-basic2"
-          label=""
+          hiddenLabel
           style={{ background: "#ffffff", width: "100%", borderRadius: "5px" }}
           InputProps={{
             sx: {
@@ -242,7 +242,7 @@ const Enquiry = () => {
         <TextField
           type="email"
           id="outlined-basic3"
-          label=""
+          hiddenLabel
           style={{ background: "#ffffff", width: "100%", borderRadius: "5px" }}
           InputProps={{
             sx: {
@@ -370,7 +370,7 @@ const Amenities = () => {
             textAlign: "center",
             padding: "10px 0",
             fontSize: "18px",
-            color: "#8a8a8a",
+            color: "#595959",
           }}
         >
           The best in class amenities for a balanced life
@@ -619,7 +619,7 @@ const Gallery = () => {
             textAlign: "center",
             padding: "10px 0",
             fontSize: "18px",
-            color: "#8a8a8a",
+            color: "#595959",
           }}
         >
           Live in the heart of Padur - the gateway to Chennai
@@ -696,7 +696,7 @@ const Location = () => {
             textAlign: "center",
             padding: "10px 0",
             fontSize: "18px",
-            color: "#8a8a8a",
+            color: "#595959",
           }}
         >
           LOCATION IS KEY TO A CONVENIENT LIFE
