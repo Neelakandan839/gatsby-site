@@ -234,7 +234,7 @@ const Enquiry = () => {
               fontWeight: "bold",
               color: "#ffffff",
             }}
-            htmlFor="outlined-basic2"
+            htmlFor="outlined-basic3"
           >
             Email*
           </InputLabel>
