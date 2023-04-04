@@ -66,9 +66,8 @@ const planList = [
 const Img = styled("img")({
   margin: "0",
   display: "block",
-  width: "100%",
-  height: "100%",
-  overflow: "hidden",
+  maxWidth: "100%",
+  maxHeight: "100%",
 });
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
@@ -106,7 +105,11 @@ const HomePage = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Grid item xs={12}>
-            <Img alt="complex" src={landing_img} />
+            <Img
+              style={{ width: "100%", height: "100%" }}
+              alt="complex"
+              src={landing_img}
+            />
           </Grid>
           <Grid item xs={10}>
             <Typography
@@ -189,6 +192,7 @@ const Enquiry = () => {
         <TextField
           type="text"
           id="outlined-basic1"
+          label=""
           style={{ background: "#ffffff", width: "100%", borderRadius: "5px" }}
           InputProps={{
             sx: {
@@ -213,6 +217,7 @@ const Enquiry = () => {
         <TextField
           type="number"
           id="outlined-basic2"
+          label=""
           style={{ background: "#ffffff", width: "100%", borderRadius: "5px" }}
           InputProps={{
             sx: {
@@ -237,6 +242,7 @@ const Enquiry = () => {
         <TextField
           type="email"
           id="outlined-basic3"
+          label=""
           style={{ background: "#ffffff", width: "100%", borderRadius: "5px" }}
           InputProps={{
             sx: {
@@ -269,7 +275,11 @@ const Enquiry = () => {
         style={{ padding: "20px", background: "#ffffff", margin: "30px 0" }}
       >
         <Grid item xs={4}>
-          <Img alt="revolutionone_logo" src={revolutionone_logo} />
+          <Img
+            style={{ width: "100%", height: "100%" }}
+            alt="revolutionone_logo"
+            src={revolutionone_logo}
+          />
         </Grid>
         <Grid
           container
@@ -411,15 +421,23 @@ const Amenities = () => {
           more.
         </Typography>
       </Grid>
-      <Grid item xs={12} style={{ width: "100%", overflow: "hidden" }}>
-        <Img alt="aminities_img" src={aminities_img} />
+      <Grid item xs={12} style={{ width: "100%", padding: "0 10px" }}>
+        <Img
+          style={{ width: "100%", height: "100%" }}
+          alt="aminities_img"
+          src={aminities_img}
+        />
       </Grid>
       <Grid
         item
         xs={8}
         style={{ margin: "30px 0", width: "100%", overflow: "hidden" }}
       >
-        <Img alt="tag_img" src={tag_img} />
+        <Img
+          style={{ width: "100%", height: "100%" }}
+          alt="tag_img"
+          src={tag_img}
+        />
       </Grid>
       <Grid item xs={8}>
         <TableContainer component={Paper}>
@@ -502,7 +520,8 @@ const Amenities = () => {
         <Img
           alt="animated_gif"
           src="https://www.jubileeresidences.com/promos/google/aug-dsp-2020/images/book_site_visit.gif"
-          loading="eager"
+          loading="lazy"
+          style={{ width: "100%", height: "100%" }}
         />
         <Grid
           container
@@ -631,7 +650,12 @@ const Gallery = () => {
                 overflow: "hidden",
               }}
             >
-              <Img alt={item} src={item} loading="eager" />
+              <Img
+                style={{ width: "100%", height: "100%" }}
+                alt={item}
+                src={item}
+                loading="lazy"
+              />
             </Box>
           </Grid>
         ))}
@@ -694,13 +718,12 @@ const Location = () => {
           appreciation.
         </Typography>
       </Grid>
-      <Grid
-        container
-        item
-        xs={12}
-        style={{ padding: "20px", width: "100%", overflow: "hidden" }}
-      >
-        <Img alt="location" src={location} />
+      <Grid container item xs={12} style={{ padding: "20px", width: "100%" }}>
+        <Img
+          style={{ width: "100%", height: "100%" }}
+          alt="location"
+          src={location}
+        />
       </Grid>
       <Grid
         container
@@ -708,7 +731,11 @@ const Location = () => {
         xs={12}
         style={{ padding: "20px", width: "100%", overflow: "hidden" }}
       >
-        <Img alt="location_advantages" src={location_advantages} />
+        <Img
+          style={{ width: "100%", height: "100%" }}
+          alt="location_advantages"
+          src={location_advantages}
+        />
       </Grid>
     </Grid>
   );
@@ -784,7 +811,11 @@ const Downloads = () => {
                 overflow: "hidden",
               }}
             >
-              <Img alt={item.img || ""} src={item.img || ""} />
+              <Img
+                style={{ width: "100%", height: "100%" }}
+                alt={item.img || ""}
+                src={item.img || ""}
+              />
             </Grid>
             <Grid
               item
@@ -825,7 +856,7 @@ const Contact = () => {
       }}
     >
       <Grid item xs={7} style={{ width: "100%", overflow: "hidden" }}>
-        <Img alt="map" src={map} />
+        <Img style={{ width: "100%", height: "100%" }} alt="map" src={map} />
       </Grid>
       <Grid
         container
@@ -834,7 +865,11 @@ const Contact = () => {
         style={{ paddingLeft: "30px", alignContent: "flex-start" }}
       >
         <Grid item xs={4} style={{ width: "100%", overflow: "hidden" }}>
-          <Img alt="revolutionone_logo" src={revolutionone_logo} />
+          <Img
+            style={{ width: "100%", height: "100%" }}
+            alt="revolutionone_logo"
+            src={revolutionone_logo}
+          />
         </Grid>
         <Grid item xs={12}>
           <Typography
@@ -897,11 +932,19 @@ const Contact = () => {
         >
           <Grid item xs={4} style={{ width: "100%", overflow: "hidden" }}>
             {" "}
-            <Img alt="alliance_logo" src={alliance_logo} />
+            <Img
+              style={{ width: "100%", height: "100%" }}
+              alt="alliance_logo"
+              src={alliance_logo}
+            />
           </Grid>
-          <Grid item xs={4} style={{ width: "100%", overflow: "hidden" }}>
+          <Grid item xs={4}>
             {" "}
-            <Img alt="urbanrise_logo" src={urbanrise_logo} />
+            <Img
+              style={{ width: "100%", overflow: "hidden" }}
+              alt="urbanrise_logo"
+              src={urbanrise_logo}
+            />
           </Grid>
         </Grid>
       </Grid>
