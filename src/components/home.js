@@ -12,6 +12,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
+import InputLabel from "@mui/material/InputLabel";
 import "../style/style.css";
 
 import landing_img from "../images/landing_img.webp";
@@ -177,22 +178,21 @@ const Enquiry = () => {
         style={{ background: "#834E31", borderRadius: "5px", padding: "20px" }}
       >
         <Grid item xs={12}>
-          <Typography
-            component="p"
+          <InputLabel
             style={{
               padding: "10px 0",
               fontSize: "12px",
               fontWeight: "bold",
               color: "#ffffff",
             }}
+            htmlFor="outlined-basic1"
           >
             Name*
-          </Typography>
+          </InputLabel>
         </Grid>
         <TextField
           type="text"
           id="outlined-basic1"
-          hiddenLabel
           style={{ background: "#ffffff", width: "100%", borderRadius: "5px" }}
           InputProps={{
             sx: {
@@ -202,17 +202,17 @@ const Enquiry = () => {
           variant="outlined"
         />
         <Grid item xs={12}>
-          <Typography
-            component="p"
+          <InputLabel
             style={{
               padding: "10px 0",
               fontSize: "12px",
               fontWeight: "bold",
               color: "#ffffff",
             }}
+            htmlFor="outlined-basic2"
           >
             Phone Number*
-          </Typography>
+          </InputLabel>
         </Grid>
         <TextField
           type="number"
@@ -227,17 +227,17 @@ const Enquiry = () => {
           variant="outlined"
         />
         <Grid item xs={12}>
-          <Typography
-            component="p"
+          <InputLabel
             style={{
               padding: "10px 0",
               fontSize: "12px",
               fontWeight: "bold",
               color: "#ffffff",
             }}
+            htmlFor="outlined-basic2"
           >
             Email*
-          </Typography>
+          </InputLabel>
         </Grid>
         <TextField
           type="email"
@@ -941,7 +941,7 @@ const Contact = () => {
           <Grid item xs={4}>
             {" "}
             <Img
-              style={{ width: "100%", overflow: "hidden" }}
+              style={{ width: "100%", height: "100%" }}
               alt="urbanrise_logo"
               src={urbanrise_logo}
             />
