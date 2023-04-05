@@ -168,7 +168,7 @@ const Enquiry = () => {
             color: "#ffffff",
           }}
         >
-          Enquire Now 1234
+          Enquire Now
         </Typography>
       </Grid>
       <Grid
